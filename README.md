@@ -4,7 +4,7 @@ Aplicação desenvolvida como solução para o desafio técnico proposto, utiliz
 
 O sistema permite o gerenciamento de motoristas e pedidos através de uma interface web integrada, contemplando autenticação de usuários, validações de negócio, persistência de dados e testes automatizados.
 
-O projeto foi desenvolvido priorizando organização, legibilidade e facilidade de execução, utilizando Docker para garantir um ambiente consistente independentemente do sistema operacional utilizado pelo avaliador.
+O projeto foi desenvolvido priorizando organização, legibilidade e facilidade de execução, utilizando Docker para garantir um ambiente consistente independentemente do sistema operacional utilizado.
 
 ---
 
