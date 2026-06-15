@@ -1,23 +1,83 @@
-# Teste Técnico
+# Teste Técnico - Gestão de Motoristas e Pedidos
 
-Aplicação desenvolvida com Laravel, Inertia.js, React, Vite, Tailwind CSS e MySQL utilizando Docker e Laravel Sail.
+Aplicação desenvolvida como solução para o desafio técnico proposto, utilizando Laravel, Inertia.js, React e MySQL.
 
-O projeto foi desenvolvido buscando uma arquitetura simples, organizada e de fácil manutenção, seguindo as boas práticas do ecossistema Laravel e React.
+O sistema permite o gerenciamento de motoristas e pedidos através de uma interface web integrada, contemplando autenticação de usuários, validações de negócio, persistência de dados e testes automatizados.
 
-A aplicação contempla autenticação de usuários, gerenciamento de motoristas e pedidos, persistência de dados em banco MySQL, além de testes automatizados para validação das principais regras de negócio.
+O projeto foi desenvolvido priorizando organização, legibilidade e facilidade de execução, utilizando Docker para garantir um ambiente consistente independentemente do sistema operacional utilizado pelo avaliador.
+
+---
+
+## Como utilizar
+
+Após concluir a instalação, acesse:
+
+```text
+http://localhost
+```
+
+O projeto utiliza Laravel Breeze para autenticação.
+
+Na página inicial, clique em **Login** no canto superior direito para acessar o sistema.
+
+### Usuário de teste
+
+Um usuário é criado automaticamente durante a execução dos seeders.
+
+**E-mail:** [test@example.com](mailto:test@example.com)
+
+**Senha:** password
+
+Após o login você será redirecionado para o dashboard da aplicação, onde poderá acessar os módulos de motoristas e pedidos.
+
+---
+
+## Tecnologias Utilizadas
+
+### Backend
+
+* PHP 8.5
+* Laravel 13
+* Laravel Breeze
+* Inertia.js
+* MySQL 8
+* PHPUnit
+
+### Frontend
+
+* React
+* Vite
+* Tailwind CSS
+
+### Infraestrutura
+
+* Docker
+* Laravel Sail
+
+---
+
+## URLs
+
+* Aplicação: http://localhost
+* Login: http://localhost/login
+* Dashboard: http://localhost/dashboard
+
+---
 
 ## Requisitos
 
 * Docker
 * Docker Compose
 
+---
+
 ## Instalação
 
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/Matheus557/teste-tecnico.git
-cd teste-tecnico
+git clone https://github.com/Matheus557/teste-tecnico-Motoristas.git
+cd teste-tecnico-Motoristas
 ```
 
 ### 2. Crie o arquivo de ambiente
@@ -89,27 +149,7 @@ docker compose -f compose.yaml exec laravel.test php artisan optimize:clear
 docker compose -f compose.yaml exec laravel.test php artisan test
 ```
 
-## Execução
-
-Após a instalação, a aplicação pode ser iniciada com:
-
-```bash
-docker compose -f compose.yaml up -d
-```
-
-## URLs
-
-* Aplicação: http://localhost
-* Login: http://localhost/login
-* Dashboard: http://localhost/dashboard
-
-## Usuário de teste
-
-Um usuário é criado automaticamente durante a execução dos seeders.
-
-**E-mail:** [test@example.com](mailto:test@example.com)
-
-**Senha:** password
+---
 
 ## Banco de Dados
 
@@ -118,6 +158,8 @@ Para recriar completamente o banco e popular os dados iniciais:
 ```bash
 docker compose -f compose.yaml exec laravel.test php artisan migrate:fresh --seed
 ```
+
+---
 
 ## Testes
 
