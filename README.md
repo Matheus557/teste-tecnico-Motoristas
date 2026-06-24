@@ -1,4 +1,4 @@
-# Teste Técnico - Gestão de Motoristas e Pedidos
+Gestão de Motoristas e Pedidos
 
 Aplicação desenvolvida como solução para o desafio técnico proposto, utilizando Laravel, Inertia.js, React e MySQL.
 
